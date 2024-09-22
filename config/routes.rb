@@ -11,4 +11,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  #localhost:3000/posts/indexとか、localhost:3000/posts/の後ろにいろいろつける
+  resources :posts, only: [:index, :new, :create]
 end
